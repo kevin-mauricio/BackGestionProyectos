@@ -15,4 +15,15 @@ class Compania extends Model
         'direccion',
         'correo',
     ];
+
+
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
+
+    public function proyecto()
+    {
+        return $this->hasMany(Proyecto::class);
+    }
 }

@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'columna_id'
+        'compania_id'
     ];
 
     /**
@@ -43,4 +43,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+    public function compania()
+    {
+        return $this->belongsTo(Compania::class);
+    }
+
+    public function ticket()
+    {
+        return $this->hasMany(Ticket::class);
+    }
+
+    public function proyecto()
+    {
+        return $this->hasManyThrough(Proyecto::class, Compania::class);
+    }
 }
