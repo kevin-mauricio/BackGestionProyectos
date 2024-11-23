@@ -1,0 +1,313 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "apiGestionProyectos",
+    "collectionId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+    "dateExported": "2024-11-22T23:46:43.747Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "46edc251-84e2-4583-bb93-6b6b32ab842f",
+            "name": "usuarios",
+            "containerId": "",
+            "created": "2024-11-22T04:19:06.718Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "companias",
+            "containerId": "",
+            "created": "2024-11-22T04:19:20.646Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "proyectos",
+            "containerId": "",
+            "created": "2024-11-22T16:40:53.712Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8ab68357-2522-49e6-8316-3474c060b2c7",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "CREATE",
+            "url": "http://127.0.0.1:8000/api/companias",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-22T05:50:03.417Z",
+            "modified": "2024-11-22T06:01:33.338Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\": \"Compañia X\",\n    \"nit\": \"1234567899\",\n    \"telefono\": \"555-1234\",\n    \"direccion\": \"Avenida Siempre Viva 123\",\n    \"correo\": \"contacto@companiax.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "839b5b84-e4a9-42b2-8a46-5be87ec0bba1",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "GET",
+            "url": "http://127.0.0.1:8000/api/companias",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-22T05:50:48.515Z",
+            "modified": "2024-11-22T05:56:33.243Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "ef1b5db0-8631-44e4-be45-1af49fa629f0",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "DELETE",
+            "url": "http://127.0.0.1:8000/api/companias/6",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-11-22T06:00:18.204Z",
+            "modified": "2024-11-22T06:22:05.507Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "339a682e-c613-4908-b28c-af660ad8b099",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "UPDATE-PUT",
+            "url": "http://127.0.0.1:8000/api/companias/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-11-22T06:16:26.753Z",
+            "modified": "2024-11-22T06:40:02.130Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Compañía C\",\n  \"nit\": \"111111111\",\n  \"telefono\": \"777888999\",\n  \"direccion\": \"Calle 77 #8-9\",\n  \"correo\": \"contacto@companiac.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b8e3445e-0165-48f9-9792-e300b56b2e0f",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "d89f2598-5549-44eb-a918-f717b8b49cf1",
+            "name": "UPDATE-PATCH",
+            "url": "http://127.0.0.1:8000/api/companias/3",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-11-22T06:16:29.597Z",
+            "modified": "2024-11-22T06:39:13.896Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"direccion\": \"Calle 77 #88-0\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "27c91171-1600-44cd-be4d-ebf3f3ad246c",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "46edc251-84e2-4583-bb93-6b6b32ab842f",
+            "name": "CREATE",
+            "url": "http://127.0.0.1:8000/api/registro",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-11-22T06:54:28.496Z",
+            "modified": "2024-11-22T07:06:49.037Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Luis\",\n  \"email\":\"luis@hotmail.com\",\n  \"password\" :\"12345678\",\n  \"password_confirmation\" :\"12345678\",\n  \"compania_id\":2\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "336c1cfd-6daa-4d34-8770-7f2fcc25f6c2",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "46edc251-84e2-4583-bb93-6b6b32ab842f",
+            "name": "LOGIN",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-11-22T07:13:52.431Z",
+            "modified": "2024-11-22T07:15:50.432Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"luis@hotmail.com\",\n  \"password\" :\"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e39a2c6b-0cfe-46d9-9ee2-f01ca625c3aa",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "46edc251-84e2-4583-bb93-6b6b32ab842f",
+            "name": "LOGOUT",
+            "url": "http://127.0.0.1:8000/api/logout",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-11-22T07:13:55.035Z",
+            "modified": "2024-11-22T20:35:35.917Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer SVIKabJBYVHetpdkLK7zQNPjJ8KJc5VTdIefo6hr4e46d712"
+                }
+            ]
+        },
+        {
+            "_id": "918bd052-3196-49f7-aaa6-ce0026368106",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "CREATE",
+            "url": "http://127.0.0.1:8000/api/proyectos",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-11-22T16:41:17.997Z",
+            "modified": "2024-11-22T18:15:22.583Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Proyecto X\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f706ae92-5820-4812-af2c-f2a3de4bd119",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "GET-ALL",
+            "url": "http://127.0.0.1:8000/api/proyectos",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-11-22T16:50:22.423Z",
+            "modified": "2024-11-22T16:51:24.156Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                }
+            ]
+        },
+        {
+            "_id": "5bb45502-b3b3-4991-a8e3-b7b46db4f308",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "GET-BY-ID",
+            "url": "http://127.0.0.1:8000/api/proyectos/4",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-11-22T18:53:58.976Z",
+            "modified": "2024-11-22T19:55:48.042Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                }
+            ]
+        },
+        {
+            "_id": "bbe61a17-cdc7-421d-9063-1b61c6618d6e",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "UPDATE",
+            "url": "http://127.0.0.1:8000/api/proyectos/1",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-11-22T19:55:52.108Z",
+            "modified": "2024-11-22T19:57:02.508Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Proyecto X update\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7ef0693c-6072-4c7f-be02-a8a7add5fa8f",
+            "colId": "12cc4ba6-5a0a-4928-bb6a-5933c0364c2b",
+            "containerId": "9201ee6e-47c6-41b6-9bb8-3cae7938691f",
+            "name": "DELETE",
+            "url": "http://127.0.0.1:8000/api/proyectos/1",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-11-22T19:55:55.360Z",
+            "modified": "2024-11-22T19:57:46.498Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                }
+            ]
+        }
+    ],
+    "ref": "gS8VTja5FkjTsKSlUABkKWLA3bpC7qDZGYkda36oKDdxg7uy2gG2k7EGxXBzAX1QufcCyxAQhJqd6UxyqJFESg"
+}
