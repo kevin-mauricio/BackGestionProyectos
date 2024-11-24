@@ -1,0 +1,413 @@
+{
+    "info": {
+        "_postman_id": "f229d54a-7aa8-4441-a528-a422e00d2ced",
+        "name": "API-GESTION-PROYECTOS-2",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "historiaUsuario",
+            "item": [
+                {
+                    "name": "CREATE",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/historias",
+                            "path": [
+                                "api",
+                                "historias"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"titulo\":\"New problem, error 999 ping\",\n  \"proyecto_id\":3\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "GET-ALL",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/historias",
+                            "path": [
+                                "api",
+                                "historias"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "GET-BY-ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/historias/5",
+                            "path": [
+                                "api",
+                                "historias",
+                                "5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "UPDATE",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/historias/5",
+                            "path": [
+                                "api",
+                                "historias",
+                                "5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"titulo\":\"Historia 2 - Dashboard administrativo update\",\n  \"proyecto_id\":2\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/historias/9",
+                            "path": [
+                                "api",
+                                "historias",
+                                "9"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tickets",
+            "item": [
+                {
+                    "name": "CREATE",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets",
+                            "path": [
+                                "api",
+                                "tickets"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"descripcion\": \"Prendi el computador\",\n    \"comentarios\": \"Pendiente de validaciones\",\n    \"estado\": \"Activo\",\n    \"historia_usuario_id\": 7\n}\n"
+                        }
+                    }
+                },
+                {
+                    "name": "GET-ALL",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets",
+                            "path": [
+                                "api",
+                                "tickets"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "GET-BY-ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets/8",
+                            "path": [
+                                "api",
+                                "tickets",
+                                "8"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "UPDATE",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets/8",
+                            "path": [
+                                "api",
+                                "tickets",
+                                "8"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"descripcion\": \"Prendi el computador\",\n    \"comentarios\": \"Revisar el orto con cliente\",\n    \"estado\": \"En Proceso\",\n    \"historia_usuario_id\": 7\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets/8",
+                            "path": [
+                                "api",
+                                "tickets",
+                                "8"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "UPDATE-PATCH",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/tickets/8",
+                            "path": [
+                                "api",
+                                "tickets",
+                                "8"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer nJvCacJnLQZrOPTBj4xJmR8iedJ7hBfLXZrA1i5J81175eb3"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"descripcion\": \"Prendi el computador UPDATE\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

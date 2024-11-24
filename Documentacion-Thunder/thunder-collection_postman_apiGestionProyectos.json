@@ -1,0 +1,469 @@
+{
+    "info": {
+        "_postman_id": "66a96618-9de8-48c0-b3ba-61a0f569f148",
+        "name": "apiGestionProyectos",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "usuarios",
+            "item": [
+                {
+                    "name": "CREATE",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/registro",
+                            "path": [
+                                "api",
+                                "registro"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"Luis\",\n  \"email\":\"luis@hotmail.com\",\n  \"password\" :\"12345678\",\n  \"password_confirmation\" :\"12345678\",\n  \"compania_id\":2\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "LOGIN",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/login",
+                            "path": [
+                                "api",
+                                "login"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"luis@hotmail.com\",\n  \"password\" :\"12345678\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "LOGOUT",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/logout",
+                            "path": [
+                                "api",
+                                "logout"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer SVIKabJBYVHetpdkLK7zQNPjJ8KJc5VTdIefo6hr4e46d712"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "companias",
+            "item": [
+                {
+                    "name": "CREATE",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/companias",
+                            "path": [
+                                "api",
+                                "companias"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"nombre\": \"Compañia X\",\n    \"nit\": \"1234567899\",\n    \"telefono\": \"555-1234\",\n    \"direccion\": \"Avenida Siempre Viva 123\",\n    \"correo\": \"contacto@companiax.com\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "GET",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/companias",
+                            "path": [
+                                "api",
+                                "companias"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "DELETE",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/companias/6",
+                            "path": [
+                                "api",
+                                "companias",
+                                "6"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "UPDATE-PUT",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/companias/3",
+                            "path": [
+                                "api",
+                                "companias",
+                                "3"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"nombre\": \"Compañía C\",\n  \"nit\": \"111111111\",\n  \"telefono\": \"777888999\",\n  \"direccion\": \"Calle 77 #8-9\",\n  \"correo\": \"contacto@companiac.com\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "UPDATE-PATCH",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/companias/3",
+                            "path": [
+                                "api",
+                                "companias",
+                                "3"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"direccion\": \"Calle 77 #88-0\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "proyectos",
+            "item": [
+                {
+                    "name": "CREATE",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/proyectos",
+                            "path": [
+                                "api",
+                                "proyectos"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"nombre\":\"Proyecto X\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "GET-ALL",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/proyectos",
+                            "path": [
+                                "api",
+                                "proyectos"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "GET-BY-ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/proyectos/4",
+                            "path": [
+                                "api",
+                                "proyectos",
+                                "4"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "UPDATE",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/proyectos/1",
+                            "path": [
+                                "api",
+                                "proyectos",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"nombre\":\"Proyecto X update\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/proyectos/1",
+                            "path": [
+                                "api",
+                                "proyectos",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer f55yzfPmJNm8lSp17vjwufjGZ2XxGO5Q9W3ELOhf73c6b86d"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
