@@ -24,6 +24,20 @@ class HistoriaUsuarioController extends Controller
         return response()->json($historias);
     }
 
+    public function getByProyecto($proyectoId)
+    {   
+        $companiaUser = Auth::user()->compania_id;
+
+        $historias = HistoriaUsuario::where('proyecto_id', $proyectoId)
+        ->whereHas('proyecto', function ($query) use ($companiaUser) {
+            $query->where('compania_id', $companiaUser);
+        })
+        ->with('proyecto') // Incluir detalles del proyecto
+        ->get();
+
+        return response()->json($historias);
+    }
+
     /**
      * Show the form for creating a new resource.
      */

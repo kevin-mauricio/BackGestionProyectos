@@ -24,6 +24,21 @@ class TicketController extends Controller
         return response()->json($tickets);
     }
 
+    public function getByHistoriaId($historiaUsuarioId)
+{
+    $companiaUser = Auth::user()->compania_id;
+
+    // Validar que la historia pertenece a la compañía del usuario autenticado
+    $tickets = Ticket::where('historia_usuario_id', $historiaUsuarioId)
+        ->whereHas('historiaUsuario.proyecto', function ($query) use ($companiaUser) {
+            $query->where('compania_id', $companiaUser);
+        })
+        ->with(['historiaUsuario.proyecto'])
+        ->get();
+
+    return response()->json($tickets);
+}
+
     /**
      * Show the form for creating a new resource.
      */

@@ -31,8 +31,13 @@ Route::middleware('auth:sanctum')->get('/logout', [AuthController::class, 'logou
 // Companias
 Route::apiResource('companias',CompaniaController::class);
 
+Route::middleware('auth:sanctum')->get('tickets/historia/{historiaUsuarioId}', [TicketController::class, 'getByHistoriaId']);
+
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('proyectos',ProyectoController::class);
     Route::apiResource('historias',HistoriaUsuarioController::class);
     Route::apiResource('tickets',TicketController::class);
+    Route::get('/proyectos/{proyectoId}/historias', [HistoriaUsuarioController::class, 'getByProyecto'])
+    ->name('proyectos.historias');
 });
